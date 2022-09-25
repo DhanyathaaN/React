@@ -1,0 +1,22 @@
+.page{
+    background-color: aliceblue;
+    padding: 3rem;
+    margin: -1.5rem auto;
+}
+
+.page h1{
+    text-align: center;
+}
+
+.page p{
+    white-space: pre-wrap;
+    margin:auto;
+    font-family:serif;
+    font-size: 1.2rem;
+}
+
+.matriximg{
+    display: block;
+    width: 50%;
+    margin: 2rem auto;
+}

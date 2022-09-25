@@ -1,0 +1,60 @@
+.codeContainer{
+    margin: 2% 5%;
+    width: 90%;
+}
+
+.dropDown{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.dropDown h2{
+    margin: 0;
+}
+
+.dropDown h2:nth-child(2){
+    cursor: pointer;
+    padding-right: 8px;
+    transform: scale(0.8);
+}
+
+.codeSnippet{ 
+    padding: 1.5%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    width: 95%;
+    margin-top: 2%;
+    cursor: text;
+    overflow: hidden;
+    resize: none;
+}
+
+.codeArea {
+    position: relative;
+}
+
+.codeArea > textarea{
+    height: 100%;
+    width: 96.5%;
+    border: none;
+    outline: none;
+}
+
+.codeArea > button{
+    position: absolute;
+    top: 0;
+    right: 0.35%;
+    border: none;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 10px;
+    padding: 6px;
+    cursor: pointer;
+    background-color: rgb(188, 188, 186);
+    color: white;
+}
+

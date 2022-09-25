@@ -1,0 +1,28 @@
+.dslab {
+    height: 12%;
+    width: 100%;
+    background-color: #191d3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0;
+}
+
+.logo1{
+    max-height: 5em;
+    margin-left: 0.5em;
+    padding-top: 1%;
+}
+
+.dslab > h1{
+    color: white;
+    padding-right: 6%;
+}
+
+.logo2{
+    max-height: 5em;
+    margin-right: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.container{
+    cursor: pointer;
+    padding: 6px 15px;
+    font-size: x-large;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 90%;
+}
+
+.selected{
+    background-color: aqua;
+    color: black;
+    width: 95%;
+}
+
+.container > span{
+    display: none;
+}
+
+.selected > span{
+    display: initial;
+    position: absolute;
+    right: -12px;
+}

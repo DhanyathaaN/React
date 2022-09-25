@@ -1,0 +1,14 @@
+.chip{
+    background-color: #DFF6FF;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0.2rem;
+    margin-right: 1rem;
+    padding: 6px;
+    cursor: pointer;
+    color: black;
+}
+
+.chip:hover{
+    background-color: #75e6ea;
+}

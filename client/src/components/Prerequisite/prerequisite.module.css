@@ -1,0 +1,16 @@
+.prereq{ 
+    padding: 0.5%;
+    background-color: #191D3D;
+    color: white;
+    margin: 2% 5%;
+    font-family: "Montserrat-Bold";
+    font-size: 1.1rem;
+    font-weight: 300;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.prereq h4{
+    margin: auto 0 auto 1rem ;
+}
