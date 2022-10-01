@@ -18,9 +18,10 @@ import String from "./pages/FOC/String/String";
 import InputOutputinC from "./pages/FOC/InputOutputinC/InputOutputinC";
 import DataTypes from "./pages/FOC/DataTypes/DataTypes";
 import ArrayIO from "./pages/FOC/ArrayIO/ArrayIO";
-//import PythonLab from "./pages/PythonCard"
 import PythonQuestion from "./pages/PythonQuestion";
 import PythonLab from "./pages/PythonLab";
+import InputOutput from "./pages/Python/Input-Output/Input-Output"
+
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
         <Route path="/foclab/Array" element={<ArrayIO />} />
         <Route path='/pythonlab' element={<PythonLab />} />
         <Route exact path='/pythonlab/question/:id' element={<PythonQuestion />} />
+        <Route path="/pythonlab/InputOutput" element={<InputOutput />} />
       </Routes>
    </>
   );

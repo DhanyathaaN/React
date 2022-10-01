@@ -3,6 +3,7 @@ import {useLocation } from 'react-router-dom'
 import styles from './code.module.css'
 import programs from './Programs';
 import FocPrograms from './FocPrograms';
+import PythonPrograms from './PythonPrograms';
 
 function Code({idx}){
 
@@ -19,7 +20,17 @@ function Code({idx}){
     }
     var myText;
     const location = useLocation();
-    (location.pathname[1] === 'd') ? myText =  programs[idx] : myText = FocPrograms[idx]  
+    // (location.pathname[1] === 'd') ? myText =  programs[idx] : myText = FocPrograms[idx] 
+    if(location.pathname[1] === 'd'){
+        myText =  programs[idx];
+    }
+    if(location.pathname[1] === 'p'){
+        myText =  PythonPrograms[idx];
+    }
+    else{
+        myText = FocPrograms[idx];
+    }
+
 
     const textAreaRef = useRef(null);
 

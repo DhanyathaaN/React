@@ -13,7 +13,7 @@ const DetailedQuestionData = [
     For example, consider a matrix of size 5 X 6 containing 6 non-zero values. This matrix can be represented as shown in the image.
     In above example matrix, there are only 6 non-zero elements ( those are 9, 8, 4, 2, 5 & 2) and matrix size is 5 X 6. We represent this matrix as shown in the above image. Here the first row in the right side table is filled with values 5, 6 & 6 which indicates that it is a sparse matrix with 5 rows, 6 columns & 6 non-zero values. The second row is filled with 0, 4, & 9 which indicates the non-zero value 9 is at the 0th-row 4th column in the Sparse matrix. In the same way, the remaining non-zero values also follow a similar pattern.
     `,
-    YouTubeLink: "https://www.youtube.com/embed/fMZelmTUWZk?rel=0&amp;showinfo=0",
+    YouTubeLink: "",
     YouTubeLinkTitle:"DFS",
     Input:`0 5 0 6
 2 0 4 0
@@ -98,7 +98,7 @@ The function get_token has a return type of struct(precedence) ,and a switch sta
 9. The control comes out of the for loop.
 10. And at the end a while loop is executed wherein the operators in the stack are popped, and printed unless it reaches eos.
     `,
-    YouTubeLink: "https://www.youtube.com/embed/RGmFWu6yjC8?rel=0&amp;showinfo=0",
+    YouTubeLink: "",
     Input:"(A+B-C*(D-E)/F)-G",
     Output:"AB+CDE-*F/-G"
 },
@@ -120,7 +120,7 @@ The function get_token has a return type of struct(precedence) ,and a switch sta
 The Postfix evaluation algorithm has linear complexity O(N). Since the expression is scanned once and push and pop operations which take constant time are performed
 
     `,
-    YouTubeLink: "https://www.youtube.com/embed/YpIkHiMm0EI?rel=0&amp;showinfo=0",
+    YouTubeLink: "",
     Input:"12345",
     Output:"98765"
 },
@@ -147,7 +147,7 @@ pop(4)`,
                (i) Add an item in ithqueue (ii) Delete an item from ithqueue (iii) Display ithqueue.`,
     PreReq: ["Queue","LinkedList"],
     Objective:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    YouTubeLink: "https://www.youtube.com/embed/gQoJRDx-7I4?rel=0&amp;showinfo=0",
+    YouTubeLink: "",
     Input:"12345",
     Output:"98765"
 },
@@ -300,7 +300,7 @@ pop(4)`,
     The time complexity of the DFS algorithm is O(V+E), where V is the number of nodes and E is the number of edges.
     The space complexity of DFS is O(V).
     `,
-    YouTubeLink: "https://www.youtube.com/embed/9HajSeGP1Pc?rel=0&amp;showinfo=0",
+    YouTubeLink: "",
     Input:"12345",
     Output:"98765"
 },

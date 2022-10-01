@@ -5,17 +5,26 @@ import DSQuestions from '../../Data/DetailedQuestionData';
 import LeftBarItem from '../LeftBarItem/LeftBarItem';
 import styles from './leftbar.module.css'
 import FocQuestions from '../../Data/FocQuestionData';
+import PythonQuestions from '../../Data/PythonQuestionData';
 
 function LeftBar(props) {
     const [tag, setTag] = useState(null);
     const [dsquestions, setDSQuestions] = useState(DSQuestions);
     const [focquestions, setFOCQuestions] = useState(FocQuestions);
+    const [pythonquestion, setPYTHONQuestions] = useState(PythonQuestions);
+    
+   
 
     const addTag = (newTag) => {
         setTag(newTag);
         if(props.name === "Data Structures"){
             let temp = DSQuestions.filter(item => item.PreReq.includes(newTag.replace(/\s+/g, '')));
             setDSQuestions(temp);
+        }
+        setTag(newTag);
+        if(props.name === "Python Laboratory"){
+           let temp = PythonQuestions.filter(item => item.PreReq.includes(newTag.replace(/\s+/g, '')));
+            setPYTHONQuestions(temp);
         }
         else{
             let temp = FocQuestions.filter(item => item.PreReq.includes(newTag.replace(/\s+/g, '')));
@@ -27,6 +36,8 @@ function LeftBar(props) {
         setTag(null);
         if(props.name === "Data Structures")
             setDSQuestions(DSQuestions);
+        else if(props.name === "Python Laboratory")
+            setPYTHONQuestions(PythonQuestions);
         else
             setFOCQuestions(FocQuestions);
     }
@@ -41,7 +52,7 @@ function LeftBar(props) {
                     ))}
                 </div>    
             </div>
-           { (props.name === "Data Structures") ?
+           if(props.name === "Data Structures"){
            <div>
             <div className={styles.qContainer}>
                 {tag && <div className={styles.dsPage}>
@@ -64,7 +75,36 @@ function LeftBar(props) {
                 ))
                 }
             </div>
-            </div>:
+            </div>
+            }
+            else if(props.name === "Python Laboratory"){
+           <div>
+            <div className={styles.qContainer}>
+                {tag && <div className={styles.dsPage}>
+                    <Link to={`/pythonlab/${tag.replace(/\s+/g, '')}`} style={{ all: 'unset' }}>
+                        <h2>Learn about {tag} &#8921;</h2>
+                    </Link>
+                </div>}
+                {/* {{(tag === 'Tree' || tag === 'Graph') && <div className={styles.graph}>
+                    <a href="https://graph-visualizer-labxrit.herokuapp.com" target="_blank" rel="noreferrer">
+                        <h2>&#8920; {tag} Visualizer &#8921;</h2>
+                    </a>
+            </div>}} */}
+                {pythonquestion.map((question) => (
+                    <Link to={`/pythonlab/question/${question.id}`} style={{ all: 'unset' }} key={question.id}>
+                        <Question
+                            id={question.id}
+                            question={question.value}
+                        />
+                    </Link>
+                ))
+}
+            </div>
+            </div>
+} 
+
+            else{
+            <div>
             <div className={styles.qContainer}>
                 {tag && <div className={styles.dsPage}>
                     <Link to={`/foclab/${tag.replace(/\s+/g, '')}`} style={{ all: 'unset' }}>
@@ -80,8 +120,11 @@ function LeftBar(props) {
                     </Link>
                 ))
                 }
-            </div>}
         </div>
+        </div>
+}
+        </div>
+
     );
 }
 

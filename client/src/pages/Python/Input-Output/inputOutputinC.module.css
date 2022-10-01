@@ -1,0 +1,52 @@
+.page{
+    background-color: aliceblue;
+    padding: 3rem;
+    margin: -1.5rem auto;
+}
+
+.page h1{
+    text-align: center;
+}
+
+.page p{
+    white-space: pre-wrap;
+    margin: auto;
+    font-family:serif;
+    font-size: 1.2rem;
+}
+
+.page span{
+    font-weight: 600;
+}
+
+.ioimg{
+    display: block;
+    margin: 2rem auto;
+    width: 50%;
+}
+
+.multidimensionalArray{
+    margin-left: 3%;
+}
+
+.tableimg{
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    margin-left: 0%;
+  }
+
+  .multiline {
+    white-space: pre-wrap;
+    background-color: rgb(230, 237, 253);
+    border: none;
+    padding: 1.5%;
+    color: black;
+    border-radius: 10px;
+    display: block;
+    width: 95%;
+    margin-top: 2%;
+    cursor: text;
+    overflow: hidden;
+    resize: none;
+  }

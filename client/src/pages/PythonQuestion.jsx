@@ -19,7 +19,7 @@ function PythonQuestion(){
         <Question id={ques.id} question={ques.value} disableHover/>
         <Prerequisite foc arrayOfItems={question.PreReq} />
         <CodeExplanation text={question.Objective} />
-        <IFrame src={question.YouTubeLink} title={question.YouTubeLinkTitle} />
+        {/* <IFrame src={question.YouTubeLink} title={question.YouTubeLinkTitle} /> */}
         <InputOutput input={question.Input} output={question.Output} />
         <Code idx={question.id-1} />
         <div style={{height:"100px"}}></div>
